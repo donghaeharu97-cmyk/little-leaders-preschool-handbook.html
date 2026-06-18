@@ -7,6 +7,9 @@
   <meta name="description" content="Bilingual preschool staff handbook — Montessori-inspired, Arabic preserved with professional English translation. Ready for display and PDF export.">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* ensure A4 when printed */
+    @page { size: A4; margin: 20mm; }
+
     /* Palette: calm Montessori browns */
     :root{
       --bg-hero: linear-gradient(180deg,#6b3f27 0%, #a7734f 55%, #f1e7de 100%);
@@ -75,6 +78,9 @@
       .card{box-shadow:none; border:none}
       .hero{min-height:28vh}
       .hero h1{font-size:26px}
+      /* avoid forced page breaks so flow remains continuous */
+      *{break-inside: avoid-page}
+      .card{page-break-inside: avoid}
     }
 
   </style>
@@ -155,7 +161,7 @@
             <p>لكي نكون على وضوح تام منذ اليوم الأول، فإن الحضور في الموعد والالتزام بالقواعد هو "الحد الأدنى المقبول" والمفترض توافره في أي معلمة تنتمي إلينا. الالتزام يحمي وجودكِ المهني في المؤسسة، لكنه لا يمنحكِ الحوافز والاستثناءات.</p>
             <ol>
               <li><strong>حد السماح والدقائق الإضافية:</strong> وقت الحضور الرسمي: يُتوقع من الجميع التواجد قبل بدء الـ Circle time واستقبل الأطفال. حد السماح (Limit): هناك وقت محدد ومسموح به للحضور (الحد الرسمي). معادلة الدقائق بعد الحد: بعد 5 دقائق من الحد المسموح يبدأ الخصم بقيمة 2 دينار علي كل دقيقة.</li>
-              <li><strong>تأخير الربع ساعة الحاسم:</strong> إذا وصل التأخير إلى 15 دقيقة كاملة بعد حد السماح، يتوقف عد الدقائق ويصبح الخصم مقطوعاً ومحدداً بـ (30 دينار)؛ لأن تأخير ربع ساعة يتسبب في سقوط ��لروتين الصباحي للفصل بالكامل ويستدعي تدخلاً إشرافياً طارئاً لتغطية الصف وما بعد ذلك يتم خصم نصف اليوم.</li>
+              <li><strong>تأخير الربع ساعة الحاسم:</strong> إذا وصل التأخير إلى 15 دقيقة كاملة بعد حد السماح، يتوقف عد الدقائق ويصبح الخصم مقطوعاً ومحدداً بـ (30 دينار)؛ لأن تأخير ربع ساعة يتسبب في سقوط الروتين الصباحي للفصل بالكامل ويستدعي تدخلاً إشرافياً طارئاً لتغطية الصف وما بعد ذلك يتم خصم نصف اليوم.</li>
               <li><strong>التراكم الشهري للتأخير:</strong> تكرار التأخير لـ 3 أيام خلال نفس الشهر (مهما كانت مدته قصيرة)، يترتب عليه تلقائياً خصم أجر يوم عمل كامل (بالإضافة إلى الخصومات الزمنية اليومية المذكورة أعلاه).</li>
             </ol>
           </div>
